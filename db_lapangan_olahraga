@@ -1,0 +1,10 @@
+USE db_lapangan_olahraga;
+
+CREATE TABLE lapangan (
+    id_lapangan VARCHAR(10) PRIMARY KEY NOT NULL,
+    nama_lapangan VARCHAR(100) NOT NULL,
+    jenis_lantai ENUM('Rumput','Matras','Vinyl','Karet','Parket Kayu') NOT NULL,
+    ukuran VARCHAR(50) NOT NULL,
+    status_fisik ENUM('Baik','Rusak','Maintenance') NOT NULL,
+    tarif INT NOT NULL
+);
